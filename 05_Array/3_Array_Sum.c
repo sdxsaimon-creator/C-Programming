@@ -1,21 +1,17 @@
 #include <stdio.h>
+int main() {
+int limit, i, value;
+int sum = 0;
+printf("Enter the number of elements: ");
+scanf("%d", &limit);
 
-int main()
-{
-    int a[100], i, limit, sum = 0;
 
-    printf("Enter array size: ");
-    scanf("%d", &limit);
+for (i = 0; i < limit; i++) {
+    printf("Enter value %d: ", i + 1);
+    scanf("%d", &value);
+    sum += value; 
+}
 
-    printf("Enter %d elements:\n", limit);
-
-    for(i = 0; i < limit; i++)
-    {
-        scanf("%d", &a[i]);
-        sum += a[i];
-    }
-
-    printf("Sum = %d", sum);
-
-    return 0;
+printf("Total Sum = %d\n", sum);
+return 0;
 }
