@@ -1,14 +1,11 @@
-#include <stdio.h>
-
-int main()
+#include<stdio.h>
+main()
 {
-    char str[100];
+char ch[20];
+printf("Enter a String: ");
+gets(ch);
 
-    printf("Enter a string: ");
-    gets(str);
+printf("The string is: %s ",ch);
 
-    printf("You entered: ");
-    puts(str);
-
-    return 0;
+return 0;
 }
